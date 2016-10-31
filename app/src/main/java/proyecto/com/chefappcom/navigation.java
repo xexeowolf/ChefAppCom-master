@@ -345,7 +345,7 @@ public class navigation extends AppCompatActivity
             startActivity(chatNom);
         } else if (id == R.id.nav_send) {
             try {
-                new CerrarSesion().execute(new URL("http://192.168.1.62:9080/Proyecto2/central/chef/eliminar"));
+                new CerrarSesion().execute(new URL("http://192.168.43.116:9080/Proyecto2/central/chef/eliminar"));
             } catch (MalformedURLException e) {
                 e.printStackTrace();
             }
@@ -377,7 +377,7 @@ public class navigation extends AppCompatActivity
                         e.printStackTrace();
                     }
                     try {
-                        new EnviarDatosMenu().execute(new URL("http://192.168.1.62:9080/Proyecto2/central/chef/menu/agregar"));
+                        new EnviarDatosMenu().execute(new URL("http://192.168.43.116:9080/Proyecto2/central/chef/menu/agregar"));
                     } catch (MalformedURLException e) {
                         e.printStackTrace();
                     }
