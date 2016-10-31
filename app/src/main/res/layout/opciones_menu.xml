@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9ACD32">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="512dp"
+            android:label="Menu">
+
+            <TextView
+                android:text="Ingrese los ingredientes de la receta:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/tv1" />
+
+            <TextView
+                android:text="Categoria del ingrediente:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="25dp"
+                android:id="@+id/tv2" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spci"
+                android:layout_below="@+id/tv2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="Ingrediente:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spci"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="18dp"
+                android:id="@+id/tv3" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv3"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/spi" />
+
+            <TextView
+                android:text="Ingredientes registrados:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnain"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="25dp"
+                android:id="@+id/tv4" />
+
+            <Button
+                android:text="Agregar ingrediente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:id="@+id/btnain"
+                android:layout_below="@+id/spi"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginStart="16dp"
+                android:onClick="BotonIngrediente" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:ems="10"
+                android:layout_alignTop="@+id/tv2"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/txtcom"
+                android:layout_above="@+id/btnext1"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:layout_below="@+id/tv4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/numt"
+                android:hint="Cantidad en minutos"
+                android:layout_alignRight="@+id/tv1"
+                android:layout_alignEnd="@+id/tv1" />
+
+            <Button
+                android:text="Agregar paso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnacom"
+                android:onClick="BotonPaso"
+                android:layout_alignBaseline="@+id/btnain"
+                android:layout_alignBottom="@+id/btnain"
+                android:layout_alignLeft="@+id/btnain"
+                android:layout_alignStart="@+id/btnain"
+                android:layout_alignRight="@+id/btnain"
+                android:layout_alignEnd="@+id/btnain" />
+
+            <Button
+                android:text="Siguiente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnext1"
+                android:onClick="BotonNext1"
+                android:layout_alignBaseline="@+id/btnain"
+                android:layout_alignBottom="@+id/btnain"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="13dp"
+                android:layout_marginEnd="13dp" />
+
+            <Button
+                android:text="Siguiente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnext2"
+                android:onClick="BotonNext2"
+                android:layout_alignBaseline="@+id/btnext1"
+                android:layout_alignBottom="@+id/btnext1"
+                android:layout_alignLeft="@+id/btnext1"
+                android:layout_alignStart="@+id/btnext1" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="Nombre del platillo"
+                android:ems="10"
+                android:layout_below="@+id/tv6"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/nom" />
+
+            <TextView
+                android:text="Ingrese el precio:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv5"
+                android:layout_below="@+id/numt"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/numc"
+                android:hint="Cantidad en colones"
+                android:layout_below="@+id/tv5"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="Ingrese el nombre del platillo:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv6"
+                android:layout_below="@+id/numc"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:text="Ingrese la categoria del platillo:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nom"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/tv7" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv7"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/spcat" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/tv4"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/l1" />
+            </RelativeLayout>
+
+            <Button
+                android:text="Registrado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnext3"
+                android:onClick="BotonNext3"
+                android:layout_alignBaseline="@+id/btnext1"
+                android:layout_alignBottom="@+id/btnext1"
+                android:layout_alignRight="@+id/btnext1"
+                android:layout_alignEnd="@+id/btnext1" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/andres/Downloads/ChefAppCom-master/linkedin-sdk/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/ic_launcher.png",
+        "source": "/home/andres/Downloads/ChefAppCom-master/linkedin-sdk/build/intermediates/bundles/debug/res/drawable-mdpi-v4/ic_launcher.png"
+    },
+    {
+        "merged": "/home/alfredo/AndroidStudioProjects/ChefAppCom/linkedin-sdk/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/ic_launcher.png",
+        "source": "/home/alfredo/AndroidStudioProjects/ChefAppCom/linkedin-sdk/build/intermediates/bundles/debug/res/drawable-mdpi-v4/ic_launcher.png"
+    }
+]
